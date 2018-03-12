@@ -1,0 +1,83 @@
+﻿.modalbackground{
+    background-color:gray;
+    border-width:thick;
+}
+.styleA {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    background-color:aqua;
+}
+.styleB {
+    font-family:Calibri;
+    font-size: 18px;
+    font-style: oblique;
+    background-color:blue;
+    
+}
+.styleC {
+    font-family:Arial;
+    font-size: 16px;
+    font-style: normal;
+    background-color:yellow;
+}
+.styleD{
+
+}
+/*ratinf stars*/
+.ratingstars
+{
+    font-size:0pt;
+    width:12px;
+    height:13px;
+    margin:0px;
+    padding:0px;
+    cursor:crosshair;
+    display:block;
+    background-repeat:no-repeat;
+}
+
+.filledratingstars
+{
+    background-image:url(../Images/FilledStar.png);
+}
+
+.Emptyratingstars
+{
+     background-image:url(../Images/EmptyStar.png);
+}
+
+.savedratingstars
+{
+     background-image:url(../Images/SavedStar.png);
+}
+
+.RatingHeader{
+    background-color:chartreuse;
+    font-family:cursive;
+    font-size:larger;
+    font-style:italic;
+    
+        
+}
+
+
+.RatingResult{
+    background-color:yellow;
+    font-family:Arial;
+    font-size:26px;
+    font-style:normal;
+    font-stretch:extra-expanded  ;  
+        
+}
+.slideImage{
+    Height:316px;
+     Width:388px;
+}
+.HTMLEditor{
+    Height:300px;
+    
+     AutoFocus:true; 
+     Width:100%
+
+}

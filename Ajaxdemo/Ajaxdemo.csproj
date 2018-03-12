@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -172,6 +176,10 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AjaxHistory.aspx" />
     <Content Include="ajaxtimer.aspx" />
+    <Content Include="ajaxtrigger1.aspx" />
+    <Content Include="AjaxUpdateProgress.aspx" />
+    <Content Include="AjaxWebService.asmx" />
+    <Content Include="AutoExtender.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -181,7 +189,56 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="Images\angularjs2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="HTMLExtender.aspx" />
+    <Content Include="Images\angularjs1.png" />
+    <Content Include="Images\angularjs3.jpeg" />
+    <Content Include="Images\asp.net mvc1.jpg" />
+    <Content Include="Images\asp.net mvc2.jpg" />
+    <Content Include="Images\asp.net mvc3.jpg" />
+    <Content Include="Images\asp.net2.png" />
+    <Content Include="Images\asp.net3.png" />
+    <Content Include="Images\asp.net`.jpg" />
+    <Content Include="Images\bootstrap1.png" />
+    <Content Include="Images\bootstrap2.jpg" />
+    <Content Include="Images\c#1.png" />
+    <Content Include="Images\c#2.jpg" />
+    <Content Include="Images\c#3.jpg" />
+    <Content Include="Images\EmptyStar.png" />
+    <Content Include="Images\Entity framework,1.jpg" />
+    <Content Include="Images\Entity framework2.jpg" />
+    <Content Include="Images\Entity framework3.jpg" />
+    <Content Include="Images\FilledStar.png" />
+    <Content Include="Images\html51.png" />
+    <Content Include="Images\iis1.jpg" />
+    <Content Include="Images\jquery1.png" />
+    <Content Include="Images\jquery2.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\mssql server1.png" />
+    <Content Include="Images\mssql server2.jpg" />
+    <Content Include="Images\mssql server3.png" />
+    <Content Include="Images\oracle DB1.jpg" />
+    <Content Include="Images\oracle DB2.jpg" />
+    <Content Include="Images\SavedStar.png" />
+    <Content Include="Images\software design pattern1.jpg" />
+    <Content Include="Images\software design pattern2.jpg" />
+    <Content Include="Images\software design pattern3.png" />
+    <Content Include="Images\software design pattern4.jpg" />
+    <Content Include="Images\visual studio1.png" />
+    <Content Include="Images\visual studio2.jpg" />
+    <Content Include="Images\visual studio3.jpg" />
+    <Content Include="Images\visual studio3.png" />
+    <Content Include="Images\vs.png" />
+    <Content Include="Images\wcf1.jpg" />
+    <Content Include="Images\wcf2.jpg" />
+    <Content Include="Images\wcf3.png" />
+    <Content Include="Images\web api1.jpg" />
+    <Content Include="Images\web api2.png" />
+    <Content Include="Images\web api3.jpg" />
+    <Content Include="Images\web api4.jpg" />
+    <Content Include="ModalPopupExtender.aspx" />
+    <Content Include="Ratings.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -215,6 +272,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="slideshowextender.aspx" />
+    <Content Include="styles\StyleSheet.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -349,6 +408,24 @@
     <Compile Include="ajaxtimer.aspx.designer.cs">
       <DependentUpon>ajaxtimer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ajaxtrigger1.aspx.cs">
+      <DependentUpon>ajaxtrigger1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxtrigger1.aspx.designer.cs">
+      <DependentUpon>ajaxtrigger1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxUpdateProgress.aspx.cs">
+      <DependentUpon>AjaxUpdateProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxUpdateProgress.aspx.designer.cs">
+      <DependentUpon>AjaxUpdateProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxWebService.asmx.cs">
+      <DependentUpon>AjaxWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -360,6 +437,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AutoExtender.aspx.cs">
+      <DependentUpon>AutoExtender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoExtender.aspx.designer.cs">
+      <DependentUpon>AutoExtender.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,8 +461,29 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HTMLExtender.aspx.cs">
+      <DependentUpon>HTMLExtender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTMLExtender.aspx.designer.cs">
+      <DependentUpon>HTMLExtender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModalPopupExtender.aspx.cs">
+      <DependentUpon>ModalPopupExtender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModalPopupExtender.aspx.designer.cs">
+      <DependentUpon>ModalPopupExtender.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ratings.aspx.cs">
+      <DependentUpon>Ratings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ratings.aspx.designer.cs">
+      <DependentUpon>Ratings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -392,6 +497,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="slideshowextender.aspx.cs">
+      <DependentUpon>slideshowextender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="slideshowextender.aspx.designer.cs">
+      <DependentUpon>slideshowextender.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
