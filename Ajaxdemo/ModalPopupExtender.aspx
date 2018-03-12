@@ -7,6 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="styles/StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -51,7 +52,7 @@
         </asp:Panel>
 
         <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" BackgroundCssClass="modalbackground"  DropShadow="true" runat="server" 
-            TargetControlID="HyperLink1"  OkControlID="btnUpdate" CancelControlID="btnCancel" PopupControlID="Panel1" >
+            TargetControlID="HyperLink1"  OkControlID="btnUpdate" CancelControlID="btnCancel" PopupControlID="Panel1"  >
 
         </ajaxToolkit:ModalPopupExtender>
    
